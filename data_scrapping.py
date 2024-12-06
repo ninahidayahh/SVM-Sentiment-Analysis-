@@ -25,10 +25,10 @@ reviews = reviews_all(
     country='id'
 )
 
-# Membuat DataFrame dari hasil review
+# Create DataFrame 
 dataframe = pd.DataFrame(reviews)
 
-# lihat isi dari kolom
+# Show columns
 dataframe.info()
 
 dataframe.head()
@@ -37,7 +37,7 @@ dataframe.shape
 
 dataframe['reviewCreatedVersion'].unique()
 
-# memfilter data berdasarkan tahun
+# filter data 
 data = dataframe[dataframe['at'].dt.year == 2024]
 
 data.head()
