@@ -121,7 +121,7 @@ fig.update_layout(
     yaxis_title='Jumlah Review'  # Judul sumbu Y
 )
 
-# Menampilkan grafik
+# Show grafik
 fig.show()
 
 from wordcloud import WordCloud
